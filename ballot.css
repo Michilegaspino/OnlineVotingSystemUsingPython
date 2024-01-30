@@ -68,10 +68,6 @@ section p{
     font-weight: 500;
 
 }
-h3:hover{
-    color:rgba(5, 89, 172, 0.64);
-}
-
 
 /* The dropdown container */
 .inputBox {
@@ -107,8 +103,50 @@ h3:hover{
     cursor: pointer;
     text-align: center;
 }
-.inputBox input[type="submit"]:hover {
+    .inputBox input[type="submit"]:hover {
         background-color: #7D0000;
         color: white;
     }
-  
+
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .list {
+        display: inline-block;
+        width: 1500px;
+        max-width: 1300px;
+        border: 1px solid black;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.747);
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        color: #f1ebeb;
+        background-color: #7D0000;
+        height: 30px;
+        margin-top: -1px;
+    }
+    .icon{
+        list-style: none;
+        padding: 0;
+        display: flex;      
+        margin-left: 1200px;
+    }
+
+    .icon:hover{
+        color: #f31616;
+    }
+    
+    .icon li{
+      margin: 0 5px;
+    }  
