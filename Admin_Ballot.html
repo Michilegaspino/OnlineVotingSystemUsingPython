@@ -31,59 +31,194 @@
 
     <!--ADMIN ACTION-->
     <div class="candidate">
-          <form>
-            <table>
-                <tr>
+      <form onsubmit="addCandidate(event)">
+          <table>
+              <tr>
                   <td>
-                    <div class="inputBox">
-                      <input type="text" placeholder="Enter Name" required>
-                    </div>
+                      <div class="inputBox">
+                          <input id="candidateName" type="text" placeholder="Enter Name" required>
+                      </div>
                   </td>
-                </tr>
+              </tr>
 
-                <tr>
-                    <td>
-                        <div class="inputBox">
-                            <select id="positionSelect" onchange="updateInputType()">
-                                <option value="text">Position</option>
-                                <option value="text">President</option>
-                                <option value="text">Vice President</option>
-                                <option value="text">Excutive Board Secretary</option>
-                                <option value="text">VP for Finance</option>
-                                <option value="text">VP for Academic Affairs</option>
-                                <option value="text">VP for Internal Affairs</option>
-                                <option value="text">VP for External Affairs</option>
-                                <option value="text">VP for Public Relations</option>
-                                <option value="text">VP for Research and Development</option>
-                                <option value="text">First Year Representative</option>
-                                <option value="text">Second Year Representative</option>
-                                <option value="text">Third Year Representative</option>
-                                <option value="text">Fourth Year Representative</option>
+              <tr>
+                  <td>
+                      <div class="inputBox">
+                          <select id="positionSelect" onchange="updateInputType()">
+                              <option value="text">Position</option>
+                              <option value="president">President</option>
+                              <option value="vicePresident">Vice President</option>
+                              <option value="EBS">Excutive Board Secretary</option>
+                              <option value="VPF">VP for Finance</option>
+                              <option value="VPA">VP for Academic Affairs</option>
+                              <option value="VIA">VP for Internal Affairs</option>
+                              <option value="VEA">VP for External Affairs</option>
+                              <option value="VPR">VP for Public Relations</option>
+                              <option value="VRD">VP for Research and Development</option>
+                              <option value="FYR">First Year Representative</option>
+                              <option value="SYR">Second Year Representative</option>
+                              <option value="TYS">Third Year Representative</option>
+                              <option value="FOYR">Fourth Year Representative</option>
+                          </select>
+                      </div>
+                  </td>
+              </tr>
+          </table>
+          <div class="inputBox">
+              <input type="submit" value="Save">
+          </div>
+      </form>
+  </div>
 
-                            </select>
-                        </div>
-                </td>
-            </tr>
-        </table>
-        <div class="inputBox">
-          <input type="submit" name="" value="Save">
+  <div class="container">
+      <div class="list">
+          <h2>PRESIDENT</h2>
+          <ul id="presidentCandidates" >
+            <div class="icon">
+              <li><ion-icon name="create-outline"></ion-icon></li>
+              <li><ion-icon name="trash-outline"></ion-icon></li>
+            </div>
+          </ul>
+      </div>
+
+     <div class="list">
+        <h2>VICE PRESIDENT</h2>
+        <ul id="vicePresidentCandidates" >
+          <div class="icon">
+            <li><ion-icon name="create-outline"></ion-icon></li>
+            <li><ion-icon name="trash-outline"></ion-icon></li>
+          </div>
+        </ul>
+    </div> 
+
+    <div class="list">
+      <h2>Excutive Board Secretary</h2>
+      <ul id="EBSCandidates" >
+        <div class="icon">
+          <li><ion-icon name="create-outline"></ion-icon></li>
+          <li><ion-icon name="trash-outline"></ion-icon></li>
         </div>
-          </form>
-        </div>
+      </ul>
+  </div>
 
-              
+  <div class="list">
+    <h2>VP for Finance</h2>
+    <ul id="VPFCandidates" >
+      <div class="icon">
+        <li><ion-icon name="create-outline"></ion-icon></li>
+        <li><ion-icon name="trash-outline"></ion-icon></li>
+      </div>
+    </ul>
+</div>
+
+<div class="list">
+  <h2>VP for Academic Affairs</h2>
+  <ul id="VPACandidates" >
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>VP for External Affairs</h2>
+  <ul id="VEACandidates" >
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>VP for Public Relations</h2>
+  <ul id="VPRCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>VP for Research and Development</h2>
+  <ul id="VRDCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>First Year Representative</h2>
+  <ul id="FYRCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>Second Year Representative</h2>
+  <ul id="SYRCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>Third Year Representative</h2>
+  <ul id="TYRCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+
+<div class="list">
+  <h2>Fourth Year Representative</h2>
+  <ul id="FOYRCandidates">
+    <div class="icon">
+      <li><ion-icon name="create-outline"></ion-icon></li>
+      <li><ion-icon name="trash-outline"></ion-icon></li>
+    </div>
+  </ul>
+</div>
+   
+    </div>
 
  <script>
-
 
 function updateInputType() {
             var positionSelect = document.getElementById('positionSelect');
             var selectedOption = positionSelect.options[positionSelect.selectedIndex];
-            
-            var positionInput = document.querySelector('.inputBox input[placeholder="Position"]');
-            positionInput.setAttribute('type', selectedOption.value);
+
+            var positionInput = document.getElementById('candidateName');
+            positionInput.setAttribute('name', selectedOption.value);
         }
 
+        function addCandidate(event) {
+            event.preventDefault();
+
+            var position = document.getElementById('positionSelect').value;
+            var candidateName = document.getElementById('candidateName').value;
+
+            if (position === 'president' || position === 'vicePresident' || position === 'EBS' || position === 'VPF' || position === 'VPA' || position === 'VIA' || position === 'VEA' || position === 'VPR'
+             || position === 'VRD' || position === 'FYR' || position === 'SYR' || position === 'TYR' || position === 'FOYR') {
+                var candidatesList = document.getElementById(position + 'Candidates');
+                var listItem = document.createElement('li');
+                listItem.innerHTML = `<span>${candidateName}</span>`;
+                candidatesList.appendChild(listItem);
+            }
+
+            event.target.reset();
+        }
 
 </script>
 
