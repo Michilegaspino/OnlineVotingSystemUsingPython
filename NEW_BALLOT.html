@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newbal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <title>Ballot Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Voter_Timeline.html">Timeline</a></li>
+                <li><a href="Voter_Ballot.html">Ballot</a></li>
+                <li><a href="Voter_LiveResult.html">Live Result</a></li>
+                <li><a href="Voter_Setting.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Title">
+        <h1>CENTRAL STUDENT COUNCIL(2024-2025)</h1>
+        <p>BALLOT BOARD</p>
+    </section>
+
+    <!-- ADMIN ACTION -->
+    <div class="candidate">
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Enter Name" required>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="inputBox">
+                            <select id="positionSelect" onchange="updateInputType()">
+                                <option value="text">Position</option>
+                                <option value="text">President</option>
+                                <option value="text">Vice President</option>
+                                <!-- Add other positions as needed -->
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="inputBox">
+                <input type="submit" name="" value="Save">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="Position">
+        <h2>PRESIDENT</h2>
+            <div class="list">
+                <span>Candidate 1</span>
+                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+            <div class="list">
+                <span>Candidate 2</span>
+                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+            <div class="list">
+                <span>Candidate 3</span>
+                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+        </div>
+
+        <div class="Position">
+            <h2>EXECUTIVE VICE PRESIDENT</h2>
+                <div class="list">
+                    <span>Candidate 1</span>
+                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+                <div class="list">
+                    <span>Candidate 2</span>
+                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+                <div class="list">
+                    <span>Candidate 3</span>
+                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+            </div>
+
+    <div class="Position">
+            <div class="list">
+                <span>Candidate 1</span>
+                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+            <div class="list">
+                <span>Candidate 2</span>
+                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+            <div class="list">
+                <span>Candidate 3</span>
+                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                <div class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+            </div>
+        </div>
+
+        <div class="Position">
+            <h2>VICE PRESIDENT FOR FINANCE</h2>
+                <div class="list">
+                    <span>Candidate 1</span>
+                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+                <div class="list">
+                    <span>Candidate 2</span>
+                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+                <div class="list">
+                    <span>Candidate 3</span>
+                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                    <div class="icon">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="trash-outline"></ion-icon>
+                      </div>
+                </div>
+            </div>
+
+            <div class="Position">
+                <h2>VICE PRESIDENT FOR ACADEMIC AFFAIRS</h2>
+                    <div class="list">
+                        <span>Candidate 1</span>
+                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                        <div class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                            <ion-icon name="trash-outline"></ion-icon>
+                          </div>
+                    </div>
+                    <div class="list">
+                        <span>Candidate 2</span>
+                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                        <div class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                            <ion-icon name="trash-outline"></ion-icon>
+                          </div>
+                    </div>
+                    <div class="list">
+                        <span>Candidate 3</span>
+                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                        <div class="icon">
+                            <ion-icon name="create-outline"></ion-icon>
+                            <ion-icon name="trash-outline"></ion-icon>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="Position">
+                    <h2>VICE PRESIDENT FOR INTERNAL AFFAIRS</h2>
+                        <div class="list">
+                            <span>Candidate 1</span>
+                            <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                            <div class="icon">
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                              </div>
+                        </div>
+                        <div class="list">
+                            <span>Candidate 2</span>
+                            <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                            <div class="icon">
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                              </div>
+                        </div>
+                        <div class="list">
+                            <span>Candidate 3</span>
+                            <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                            <div class="icon">
+                                <ion-icon name="create-outline"></ion-icon>
+                                <ion-icon name="trash-outline"></ion-icon>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="Position">
+                        <h2>VICE PRESIDENT FOR EXTERNAL AFFAIRS</h2>
+                            <div class="list">
+                                <span>Candidate 1</span>
+                                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                <div class="icon">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                  </div>
+                            </div>
+                            <div class="list">
+                                <span>Candidate 2</span>
+                                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                <div class="icon">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                  </div>
+                            </div>
+                            <div class="list">
+                                <span>Candidate 3</span>
+                                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                <div class="icon">
+                                    <ion-icon name="create-outline"></ion-icon>
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="Position">
+                            <h2>VICE PRESIDENT FOR PUBLIC RELATIONS</h2>
+                                <div class="list">
+                                    <span>Candidate 1</span>
+                                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                    <div class="icon">
+                                        <ion-icon name="create-outline"></ion-icon>
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                      </div>
+                                </div>
+                                <div class="list">
+                                    <span>Candidate 2</span>
+                                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                    <div class="icon">
+                                        <ion-icon name="create-outline"></ion-icon>
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                      </div>
+                                </div>
+                                <div class="list">
+                                    <span>Candidate 3</span>
+                                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                    <div class="icon">
+                                        <ion-icon name="create-outline"></ion-icon>
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="Position">
+                                <h2>VICE PRESIDENT FOR RESEARCH AND DEVELOPMENT</h2>
+                                    <div class="list">
+                                        <span>Candidate 1</span>
+                                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                        <div class="icon">
+                                            <ion-icon name="create-outline"></ion-icon>
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                          </div>
+                                    </div>
+                                    <div class="list">
+                                        <span>Candidate 2</span>
+                                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                        <div class="icon">
+                                            <ion-icon name="create-outline"></ion-icon>
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                          </div>
+                                    </div>
+                                    <div class="list">
+                                        <span>Candidate 3</span>
+                                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                        <div class="icon">
+                                            <ion-icon name="create-outline"></ion-icon>
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="Position">
+                                    <h2>FIRST YEAR REPRESENTATIVE</h2>
+                                        <div class="list">
+                                            <span>Candidate 1</span>
+                                            <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                            <div class="icon">
+                                                <ion-icon name="create-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                              </div>
+                                        </div>
+                                        <div class="list">
+                                            <span>Candidate 2</span>
+                                            <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                            <div class="icon">
+                                                <ion-icon name="create-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                              </div>
+                                        </div>
+                                        <div class="list">
+                                            <span>Candidate 3</span>
+                                            <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                            <div class="icon">
+                                                <ion-icon name="create-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Position">
+                                        <h2>SECOND YEAR REPRESENTATIVE</h2>
+                                            <div class="list">
+                                                <span>Candidate 1</span>
+                                                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                <div class="icon">
+                                                    <ion-icon name="create-outline"></ion-icon>
+                                                    <ion-icon name="trash-outline"></ion-icon>
+                                                  </div>
+                                            </div>
+                                            <div class="list">
+                                                <span>Candidate 2</span>
+                                                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                <div class="icon">
+                                                    <ion-icon name="create-outline"></ion-icon>
+                                                    <ion-icon name="trash-outline"></ion-icon>
+                                                  </div>
+                                            </div>
+                                            <div class="list">
+                                                <span>Candidate 3</span>
+                                                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                <div class="icon">
+                                                    <ion-icon name="create-outline"></ion-icon>
+                                                    <ion-icon name="trash-outline"></ion-icon>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="Position">
+                                            <h2>THIRD YEAR REPRESENTATIVE</h2>
+                                                <div class="list">
+                                                    <span>Candidate 1</span>
+                                                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                    <div class="icon">
+                                                        <ion-icon name="create-outline"></ion-icon>
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                      </div>
+                                                </div>
+                                                <div class="list">
+                                                    <span>Candidate 2</span>
+                                                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                    <div class="icon">
+                                                        <ion-icon name="create-outline"></ion-icon>
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                      </div>
+                                                </div>
+                                                <div class="list">
+                                                    <span>Candidate 3</span>
+                                                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                    <div class="icon">
+                                                        <ion-icon name="create-outline"></ion-icon>
+                                                        <ion-icon name="trash-outline"></ion-icon>
+                                                      </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="Position">
+                                                <h2>FOURTH YEAR REPRESENTATIVE</h2>
+                                                    <div class="list">
+                                                        <span>Candidate 1</span>
+                                                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                        <div class="icon">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                          </div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <span>Candidate 2</span>
+                                                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                        <div class="icon">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                          </div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <span>Candidate 3</span>
+                                                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                        <div class="icon">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                          </div>
+                                                    </div>
+                                                </div>
+    
+
+    </div>
+
+    <script>
+        function updateInputType() {
+            var positionSelect = document.getElementById('positionSelect');
+            var selectedOption = positionSelect.options[positionSelect.selectedIndex];
+
+            var positionInput = document.querySelector('.inputBox input[placeholder="Position"]');
+            positionInput.setAttribute('type', selectedOption.value);
+        }
+    </script>
+
+</body>
+
+</html>
