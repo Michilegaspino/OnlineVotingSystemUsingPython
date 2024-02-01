@@ -92,7 +92,7 @@ section p{
 .inputBox input[type="submit"] {
     width: 30%;
     margin-top: 10px;
-    margin-left: 275px;
+    margin-left: 315px;
     margin-bottom: 20px;
     background-color: #7D0000;
     color: yellow;
@@ -107,7 +107,47 @@ section p{
         color: white;
     }
 
+    /* The status display */
+    .toggle-btn {
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: -25px;
+        margin-right: -1170px;
+        margin-left: 1205px;
+        text-transform: uppercase;
+      }
+  
+      #new-btn {
+        background-color:  #7D0000;
+        color: #fff;
+      }
+  
+      #open-btn {
+        background-color:  #7D0000;
+        color: #fff;
+      }
+  
+      #close-btn {
+        background-color:  #7D0000;
+        color: #fff;
+      }
+  
+      #status {
+        font-size: 32px;
+        margin-top: 25px;
+        margin-left: 90px;
+        margin-bottom: -30px; 
+        text-transform: uppercase;
+
+      }
+
        
+
+    /* The list for positionSelected */
     .container {
         text-align: center;
         padding: 20px;

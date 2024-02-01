@@ -45,10 +45,20 @@
                         <div class="inputBox">
                             <select id="positionSelect" onchange="updateInputType()">
                                 <option value="text">Position</option>
-                                <option value="text">President</option>
-                                <option value="text">Vice President</option>
-                                <!-- Add other positions as needed -->
-                            </select>
+                                <option value="president">President</option>
+                                <option value="vicePresident">Vice President</option>
+                                <option value="EBS">Excutive Board Secretary</option>
+                                <option value="VPF">VP for Finance</option>
+                                <option value="VPA">VP for Academic Affairs</option>
+                                <option value="VIA">VP for Internal Affairs</option>
+                                <option value="VEA">VP for External Affairs</option>
+                                <option value="VPR">VP for Public Relations</option>
+                                <option value="VRD">VP for Research and Development</option>
+                                <option value="FYR">First Year Representative</option>
+                                <option value="SYR">Second Year Representative</option>
+                                <option value="TYS">Third Year Representative</option>
+                                <option value="FOYR">Fourth Year Representative</option>                        
+                                </select>
                         </div>
                     </td>
                 </tr>
@@ -58,12 +68,20 @@
             </div>
         </form>
     </div>
+
+    <div class="displaystat">
+        <div id="status">STATUS: NONE</div>
+        <button id="new-btn" class="toggle-btn" onclick="toggleState('new')">NEW</button>
+        <button id="open-btn" class="toggle-btn" onclick="toggleState('open')">OPEN</button>
+
+    </div>
+
     <div class="container">
         <div class="Position">
         <h2>PRESIDENT</h2>
             <div class="list">
                 <span>Candidate 1</span>
-                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                <div class="bar" id="president" ></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -71,7 +89,7 @@
             </div>
             <div class="list">
                 <span>Candidate 2</span>
-                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                <div class="bar" id="president"></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -79,7 +97,7 @@
             </div>
             <div class="list">
                 <span>Candidate 3</span>
-                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                <div class="bar" id="president"></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -91,7 +109,7 @@
             <h2>EXECUTIVE VICE PRESIDENT</h2>
                 <div class="list">
                     <span>Candidate 1</span>
-                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                    <div class="bar" id="vicePresident"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -99,7 +117,7 @@
                 </div>
                 <div class="list">
                     <span>Candidate 2</span>
-                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                    <div class="bar" id="vicePresident"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -107,7 +125,7 @@
                 </div>
                 <div class="list">
                     <span>Candidate 3</span>
-                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                    <div class="bar" id="vicePresident"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -118,7 +136,7 @@
     <div class="Position">
             <div class="list">
                 <span>Candidate 1</span>
-                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                <div class="bar" id="EBS"></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -126,7 +144,7 @@
             </div>
             <div class="list">
                 <span>Candidate 2</span>
-                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                <div class="bar" id="EBS"></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -134,7 +152,7 @@
             </div>
             <div class="list">
                 <span>Candidate 3</span>
-                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                <div class="bar" id="EBS"></div>
                 <div class="icon">
                     <ion-icon name="create-outline"></ion-icon>
                     <ion-icon name="trash-outline"></ion-icon>
@@ -146,7 +164,7 @@
             <h2>VICE PRESIDENT FOR FINANCE</h2>
                 <div class="list">
                     <span>Candidate 1</span>
-                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                    <div class="bar" id="VPF"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -154,7 +172,7 @@
                 </div>
                 <div class="list">
                     <span>Candidate 2</span>
-                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                    <div class="bar" id="VPF"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -162,7 +180,7 @@
                 </div>
                 <div class="list">
                     <span>Candidate 3</span>
-                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                    <div class="bar" id="VPF"></div>
                     <div class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                         <ion-icon name="trash-outline"></ion-icon>
@@ -174,7 +192,7 @@
                 <h2>VICE PRESIDENT FOR ACADEMIC AFFAIRS</h2>
                     <div class="list">
                         <span>Candidate 1</span>
-                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                        <div class="bar" id="VPA"></div>
                         <div class="icon">
                             <ion-icon name="create-outline"></ion-icon>
                             <ion-icon name="trash-outline"></ion-icon>
@@ -182,7 +200,7 @@
                     </div>
                     <div class="list">
                         <span>Candidate 2</span>
-                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                        <div class="bar" id="VPA"></div>
                         <div class="icon">
                             <ion-icon name="create-outline"></ion-icon>
                             <ion-icon name="trash-outline"></ion-icon>
@@ -190,7 +208,7 @@
                     </div>
                     <div class="list">
                         <span>Candidate 3</span>
-                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                        <div class="bar" id="VPA"></div>
                         <div class="icon">
                             <ion-icon name="create-outline"></ion-icon>
                             <ion-icon name="trash-outline"></ion-icon>
@@ -202,7 +220,7 @@
                     <h2>VICE PRESIDENT FOR INTERNAL AFFAIRS</h2>
                         <div class="list">
                             <span>Candidate 1</span>
-                            <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                            <div class="bar" id="VIA"></div>
                             <div class="icon">
                                 <ion-icon name="create-outline"></ion-icon>
                                 <ion-icon name="trash-outline"></ion-icon>
@@ -210,7 +228,7 @@
                         </div>
                         <div class="list">
                             <span>Candidate 2</span>
-                            <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                            <div class="bar" id="VIA"></div>
                             <div class="icon">
                                 <ion-icon name="create-outline"></ion-icon>
                                 <ion-icon name="trash-outline"></ion-icon>
@@ -218,7 +236,7 @@
                         </div>
                         <div class="list">
                             <span>Candidate 3</span>
-                            <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                            <div class="bar" id="VIA"></div>
                             <div class="icon">
                                 <ion-icon name="create-outline"></ion-icon>
                                 <ion-icon name="trash-outline"></ion-icon>
@@ -230,7 +248,7 @@
                         <h2>VICE PRESIDENT FOR EXTERNAL AFFAIRS</h2>
                             <div class="list">
                                 <span>Candidate 1</span>
-                                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                <div class="bar" id="VEA"></div>
                                 <div class="icon">
                                     <ion-icon name="create-outline"></ion-icon>
                                     <ion-icon name="trash-outline"></ion-icon>
@@ -238,7 +256,7 @@
                             </div>
                             <div class="list">
                                 <span>Candidate 2</span>
-                                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                <div class="bar" id="VEA"></div>
                                 <div class="icon">
                                     <ion-icon name="create-outline"></ion-icon>
                                     <ion-icon name="trash-outline"></ion-icon>
@@ -246,7 +264,7 @@
                             </div>
                             <div class="list">
                                 <span>Candidate 3</span>
-                                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                <div class="bar" id="VEA"></div>
                                 <div class="icon">
                                     <ion-icon name="create-outline"></ion-icon>
                                     <ion-icon name="trash-outline"></ion-icon>
@@ -258,7 +276,7 @@
                             <h2>VICE PRESIDENT FOR PUBLIC RELATIONS</h2>
                                 <div class="list">
                                     <span>Candidate 1</span>
-                                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                    <div class="bar" id="VPR"></div>
                                     <div class="icon">
                                         <ion-icon name="create-outline"></ion-icon>
                                         <ion-icon name="trash-outline"></ion-icon>
@@ -266,7 +284,7 @@
                                 </div>
                                 <div class="list">
                                     <span>Candidate 2</span>
-                                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                    <div class="bar" id="VPR"></div>
                                     <div class="icon">
                                         <ion-icon name="create-outline"></ion-icon>
                                         <ion-icon name="trash-outline"></ion-icon>
@@ -274,7 +292,7 @@
                                 </div>
                                 <div class="list">
                                     <span>Candidate 3</span>
-                                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                    <div class="bar" id="VPR"></div>
                                     <div class="icon">
                                         <ion-icon name="create-outline"></ion-icon>
                                         <ion-icon name="trash-outline"></ion-icon>
@@ -286,7 +304,7 @@
                                 <h2>VICE PRESIDENT FOR RESEARCH AND DEVELOPMENT</h2>
                                     <div class="list">
                                         <span>Candidate 1</span>
-                                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                        <div class="bar" id="VRD"></div>
                                         <div class="icon">
                                             <ion-icon name="create-outline"></ion-icon>
                                             <ion-icon name="trash-outline"></ion-icon>
@@ -294,7 +312,7 @@
                                     </div>
                                     <div class="list">
                                         <span>Candidate 2</span>
-                                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                        <div class="bar" id="VRD"></div>
                                         <div class="icon">
                                             <ion-icon name="create-outline"></ion-icon>
                                             <ion-icon name="trash-outline"></ion-icon>
@@ -302,7 +320,7 @@
                                     </div>
                                     <div class="list">
                                         <span>Candidate 3</span>
-                                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                        <div class="bar" id="VRD"></div>
                                         <div class="icon">
                                             <ion-icon name="create-outline"></ion-icon>
                                             <ion-icon name="trash-outline"></ion-icon>
@@ -314,7 +332,7 @@
                                     <h2>FIRST YEAR REPRESENTATIVE</h2>
                                         <div class="list">
                                             <span>Candidate 1</span>
-                                            <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                            <div class="bar" id="FYR"></div>
                                             <div class="icon">
                                                 <ion-icon name="create-outline"></ion-icon>
                                                 <ion-icon name="trash-outline"></ion-icon>
@@ -322,7 +340,7 @@
                                         </div>
                                         <div class="list">
                                             <span>Candidate 2</span>
-                                            <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                            <div class="bar" id="FYR"></div>
                                             <div class="icon">
                                                 <ion-icon name="create-outline"></ion-icon>
                                                 <ion-icon name="trash-outline"></ion-icon>
@@ -330,7 +348,7 @@
                                         </div>
                                         <div class="list">
                                             <span>Candidate 3</span>
-                                            <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                            <div class="bar" id="FYR"></div>
                                             <div class="icon">
                                                 <ion-icon name="create-outline"></ion-icon>
                                                 <ion-icon name="trash-outline"></ion-icon>
@@ -342,7 +360,7 @@
                                         <h2>SECOND YEAR REPRESENTATIVE</h2>
                                             <div class="list">
                                                 <span>Candidate 1</span>
-                                                <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                <div class="bar" id="SYR"></div>
                                                 <div class="icon">
                                                     <ion-icon name="create-outline"></ion-icon>
                                                     <ion-icon name="trash-outline"></ion-icon>
@@ -350,7 +368,7 @@
                                             </div>
                                             <div class="list">
                                                 <span>Candidate 2</span>
-                                                <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                <div class="bar" id="SYR"></div>
                                                 <div class="icon">
                                                     <ion-icon name="create-outline"></ion-icon>
                                                     <ion-icon name="trash-outline"></ion-icon>
@@ -358,7 +376,7 @@
                                             </div>
                                             <div class="list">
                                                 <span>Candidate 3</span>
-                                                <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                <div class="bar" id="SYR"></div>
                                                 <div class="icon">
                                                     <ion-icon name="create-outline"></ion-icon>
                                                     <ion-icon name="trash-outline"></ion-icon>
@@ -370,7 +388,7 @@
                                             <h2>THIRD YEAR REPRESENTATIVE</h2>
                                                 <div class="list">
                                                     <span>Candidate 1</span>
-                                                    <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                    <div class="bar" id="TYR"></div>
                                                     <div class="icon">
                                                         <ion-icon name="create-outline"></ion-icon>
                                                         <ion-icon name="trash-outline"></ion-icon>
@@ -378,7 +396,7 @@
                                                 </div>
                                                 <div class="list">
                                                     <span>Candidate 2</span>
-                                                    <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                    <div class="bar" id="TYR"></div>
                                                     <div class="icon">
                                                         <ion-icon name="create-outline"></ion-icon>
                                                         <ion-icon name="trash-outline"></ion-icon>
@@ -386,7 +404,7 @@
                                                 </div>
                                                 <div class="list">
                                                     <span>Candidate 3</span>
-                                                    <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                    <div class="bar" id="TYR"></div>
                                                     <div class="icon">
                                                         <ion-icon name="create-outline"></ion-icon>
                                                         <ion-icon name="trash-outline"></ion-icon>
@@ -398,7 +416,7 @@
                                                 <h2>FOURTH YEAR REPRESENTATIVE</h2>
                                                     <div class="list">
                                                         <span>Candidate 1</span>
-                                                        <div class="bar" id="Candidate1Bar" style="width: 40%;"></div>
+                                                        <div class="bar" id="FOYR"></div>
                                                         <div class="icon">
                                                             <ion-icon name="create-outline"></ion-icon>
                                                             <ion-icon name="trash-outline"></ion-icon>
@@ -406,7 +424,7 @@
                                                     </div>
                                                     <div class="list">
                                                         <span>Candidate 2</span>
-                                                        <div class="bar" id="Candidate2Bar" style="width: 30%;"></div>
+                                                        <div class="bar" id="FOYR"></div>
                                                         <div class="icon">
                                                             <ion-icon name="create-outline"></ion-icon>
                                                             <ion-icon name="trash-outline"></ion-icon>
@@ -414,7 +432,7 @@
                                                     </div>
                                                     <div class="list">
                                                         <span>Candidate 3</span>
-                                                        <div class="bar" id="abstainBar" style="width: 30%;"></div>
+                                                        <div class="bar" id="FOYR"></div>
                                                         <div class="icon">
                                                             <ion-icon name="create-outline"></ion-icon>
                                                             <ion-icon name="trash-outline"></ion-icon>
@@ -426,12 +444,55 @@
     </div>
 
     <script>
-        function updateInputType() {
+       function updateInputType() {
             var positionSelect = document.getElementById('positionSelect');
             var selectedOption = positionSelect.options[positionSelect.selectedIndex];
 
             var positionInput = document.querySelector('.inputBox input[placeholder="Position"]');
             positionInput.setAttribute('type', selectedOption.value);
+        }
+
+        var currentState = {
+            'new': false,
+            'open': false,
+        };
+
+        function toggleState(button) {
+            currentState[button] = !currentState[button];
+            updateStatus(button);
+            updateButtonAppearance(button);
+            updateButtonText(button);
+        }
+
+        function updateStatus(clickedButton) {
+            var statusElement = document.getElementById('status');
+            var statusText = 'STATUS: ';
+
+            if (currentState['new']) {
+                statusText += 'NEW';
+            } else if (currentState['open']) {
+                statusText += 'OPEN';
+            } else {
+                statusText += 'closed';
+            }
+
+            statusElement.textContent = statusText;
+        }
+
+        function updateButtonAppearance(clickedButton) {
+            for (var button in currentState) {
+                var buttonElement = document.getElementById(button + '-btn');
+                if (button === clickedButton && currentState[button]) {
+                    buttonElement.style.backgroundColor = '#ffd11a';
+                } else {
+                    buttonElement.style.backgroundColor = button === 'new' ? '#7D0000' : (button === 'open' ? '#7D0000' : '#7D0000');
+                }
+            }
+        }
+
+        function updateButtonText(button) {
+            var openButton = document.getElementById('open-btn');
+            openButton.textContent = currentState['open'] ? 'Closed' : 'Open';
         }
     </script>
 
