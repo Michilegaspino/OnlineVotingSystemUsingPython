@@ -480,15 +480,16 @@
         }
 
         function updateButtonAppearance(clickedButton) {
-            for (var button in currentState) {
-                var buttonElement = document.getElementById(button + '-btn');
-                if (button === clickedButton && currentState[button]) {
-                    buttonElement.style.backgroundColor = '#ffd11a';
-                } else {
-                    buttonElement.style.backgroundColor = button === 'new' ? '#7D0000' : (button === 'open' ? '#7D0000' : '#7D0000');
-                }
-            }
+    for (var button in currentState) {
+        var buttonElement = document.getElementById(button + '-btn');
+        if (button === clickedButton && currentState[button]) {
+            buttonElement.style.backgroundColor = '#ffd11a';
+        } else {
+            buttonElement.style.backgroundColor = currentState[button] ? '#7D0000' : '#7D0000';
         }
+    }
+}
+
 
         function updateButtonText(button) {
             var openButton = document.getElementById('open-btn');
